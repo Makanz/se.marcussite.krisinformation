@@ -1,0 +1,22 @@
+{
+  "name": "se.marcussite.krisinformation",
+  "version": "0.0.1",
+  "description": "Use this app to check if there are any relevant crisis information in your area",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Makanz/se.marcussite.krisinformation.git"
+  },
+  "author": "Marcus Alsterfjord",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Makanz/se.marcussite.krisinformation/issues"
+  },
+  "homepage": "https://github.com/Makanz/se.marcussite.krisinformation#readme",
+  "dependencies": {
+    "node-fetch": "^2.3.0"
+  }
+}

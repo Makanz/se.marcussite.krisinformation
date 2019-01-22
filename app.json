@@ -1,0 +1,62 @@
+{
+  "id": "se.marcussite.krisinformation",
+  "version": "0.0.1",
+  "compatibility": ">=1.5.0",
+  "sdk": 2,
+  "name": {
+    "en": "Krisinformation"
+  },
+  "description": {
+    "en": "Use this app to check if there are any relevant crisis information in your area"
+  },
+  "category": [
+    "tools"
+  ],
+  "permissions": [],
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "author": {
+    "name": "Marcus Alsterfjord",
+    "email": "marcus@marcussite.se"
+  },
+  "flow": {
+    "triggers": [
+      {
+        "id": "krisinformation_trigger_alert",
+        "title": {
+          "en": "Triggered alert"
+        },
+        "tokens": [
+          {
+            "name": "title",
+            "type": "string",
+            "title": {
+              "en": "Title"
+            },
+            "example": "10:00"
+          },
+          {
+            "name": "message",
+            "type": "string",
+            "title": {
+              "en": "Message"
+            },
+            "example": "Viktigt meddelande till allmänheten"
+          },
+          {
+            "name": "area",
+            "type": "string",
+            "title": {
+              "en": "Area"
+            },
+            "example": "Skåne län"
+          }
+        ]
+      }
+    ],
+    "conditions": [],
+    "actions": []
+  }
+}
