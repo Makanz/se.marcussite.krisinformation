@@ -1,1 +1,6 @@
-{}
+{
+    "settings": {
+        "title": "Settings for Crisis information",
+        "description": "Description"
+    }
+}
