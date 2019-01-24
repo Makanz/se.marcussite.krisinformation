@@ -8,3 +8,11 @@
     padding: 0;
     margin: 0;
 }
+
+#appCrisis .padding {
+    padding: 0 10px 10px 10px;
+}
+
+#appCrisis input {
+    margin: 3px 0;
+}

@@ -1,25 +1,50 @@
 function onHomeyReady(Homey) {
-    // ...
 
-    //Homey.ready();
+    Homey.ready();
 
-    var cityElements = document.querySelectorAll('input.city');
+    var citiesElement = document.getElementById('citiesList')
     var addCityElement = document.getElementById('addCityBtn')
     var saveElement = document.getElementById('saveBtn');
-/*
-    Homey.get('cities', function (err, username) {
+
+    Homey.get('cities', function (err, cities) {
         if (err) return Homey.alert(err);
-        usernameElement.value = username;
+        JSON.parse(cities).forEach(function (i) {
+            createInputElement(i);
+        });
     });
-*/
+
+    addCityElement.addEventListener('click', function(e){
+        createInputElement();
+    });
+
+    function createInputElement(value) {
+        console.log("createInputElement", createInputElement);
+        var li = document.createElement("li");
+
+        var input = document.createElement("input");
+        input.type = "text";
+        input.className = "city"; 
+        if(value != undefined)
+            input.value = value;
+        li.appendChild(input);
+        citiesElement.appendChild(li);
+    }
+
     saveElement.addEventListener('click', function (e) {
-/*
-        Homey.set('cities', usernameElement.value, function (err) {
+        var cityElements = document.querySelectorAll('input.city');
+        var citiesArray = [];
+        cityElements.forEach(function(item) {
+            if(item.value !== "")
+                citiesArray.push(item.value);
+        })
+
+        console.log(citiesArray)
+        console.log(JSON.stringify(citiesArray))
+
+        Homey.set('cities', JSON.stringify(citiesArray), function (err) {
             if (err) return Homey.alert(err);
         });
-*/
+
+        Homey.alert("Settings saved!");
     });
 }
-
-
-onHomeyReady();
