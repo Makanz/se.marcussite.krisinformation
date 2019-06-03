@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Makanz/se.marcussite.krisinformation#readme",
   "dependencies": {
-    "node-fetch": "^2.3.0"
+    "md5": "^2.2.1",
+    "node-fetch": "^2.6.0"
   }
 }

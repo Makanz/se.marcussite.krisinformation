@@ -1,6 +1,6 @@
 {
   "id": "se.marcussite.krisinformation",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "compatibility": ">=1.5.0",
   "sdk": 2,
   "name": {
@@ -35,7 +35,7 @@
             "title": {
               "en": "Title"
             },
-            "example": "10:00"
+            "example": "Viktigt meddelande till allmänheten"
           },
           {
             "name": "message",
@@ -43,15 +43,7 @@
             "title": {
               "en": "Message"
             },
-            "example": "Viktigt meddelande till allmänheten"
-          },
-          {
-            "name": "area",
-            "type": "string",
-            "title": {
-              "en": "Area"
-            },
-            "example": "Skåne län"
+            "example": "Viktigt meddelandet på grund av brand"
           }
         ]
       }
